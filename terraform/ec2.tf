@@ -18,10 +18,10 @@ resource "aws_instance" "ec2_vm" {
   instance_type = "${var.instance_type}"
   
 # VPC Subnet
-subnet_id = "${aws_subnet.subnet-public-1.id}"
+subnet_id = "${data.terraform_remote_state.network.subnet-public-1_id}"
 
 # Security Group
-vpc_security_group_ids = ["${aws_security_group.sg.id}"]
+vpc_security_group_ids = ["${data.terraform_remote_state.network.sg}"]
 
 # SSH key in AWS account
 key_name = "${var.ssh_key}"
