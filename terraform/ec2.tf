@@ -21,7 +21,7 @@ resource "aws_instance" "ec2_vm" {
 subnet_id = "${aws_subnet.subnet-public-1a.id}"
 
 # Security Group
-vpc_security_group_ids = ["${aws_security_group.secgroup.id}"]
+vpc_security_group_ids = ["${aws_security_group.sg.id}"]
 
 # SSH key in AWS account
 key_name = "${var.ssh_key}"
