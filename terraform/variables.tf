@@ -4,8 +4,6 @@ variable "ami" {}
 
 variable "instance_type" {}
 
-variable "instance_size" {}
-
 variable "ssh_key" {}
 
 variable "owner" {}
