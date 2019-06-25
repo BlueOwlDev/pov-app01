@@ -28,7 +28,7 @@ key_name = "${var.ssh_key}"
  
 # tags
 tags {
-  Name = "ec2-${count.index}-${var.environment_name}"
+  Name = "ec2-${count.index}"
   owner = "${var.owner}"
   TTL = "${var.ttl}"
  }
