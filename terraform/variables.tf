@@ -13,3 +13,7 @@ variable "ttl" {}
 variable "count" {}
 
 variable "bucket_name" {}
+
+variable "org" {}
+
+variable "workspace_name" {}
