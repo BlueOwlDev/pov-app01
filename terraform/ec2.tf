@@ -18,7 +18,7 @@ resource "aws_instance" "ec2_vm" {
   instance_type = "${var.instance_type}"
   
 # VPC Subnet
-subnet_id = "${aws_subnet.subnet-public-1a.id}"
+subnet_id = "${aws_subnet.subnet-public-1.id}"
 
 # Security Group
 vpc_security_group_ids = ["${aws_security_group.sg.id}"]
