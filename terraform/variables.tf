@@ -13,3 +13,5 @@ variable "owner" {}
 variable "ttl" {}
 
 variable "count" {}
+
+variable "bucket_name" {}
