@@ -1,5 +1,13 @@
 #Ec2 instance //---------------------------------------
 
+data "terraform_remote_state" "network" {
+  backend = "atlas"
+
+  config {
+    name = "${var.org}/${var.workspace_name}"
+  }
+}
+
 provider "aws" {
   region = "${var.aws_region}"
 }
